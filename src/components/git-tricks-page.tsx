@@ -14,7 +14,7 @@ export function GitTricksPage() {
       command.name.toLowerCase().includes(searchLower) ||
       command.description.toLowerCase().includes(searchLower) ||
       command.usage.toLowerCase().includes(searchLower) ||
-      command.tags.some((tag: any) => tag.toLowerCase().includes(searchLower))
+      command.tags.some((tag: string) => tag.toLowerCase().includes(searchLower))
     )
   })
 
