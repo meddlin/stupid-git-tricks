@@ -19,16 +19,18 @@ export function GitTricksPage() {
   })
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background"> {/* min-h-screen bg-background */}
       <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center">
           <h1 className="text-2xl font-bold tracking-tight">Stupid Git Tricks</h1>
         </div>
       </header>
-      <main className="container py-6">
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-        <CommandList commands={filteredCommands} />
-      </main>
+
+        <main className="container py-6">
+          <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+          <CommandList commands={filteredCommands} />
+        </main>
+
       <footer className="border-t py-6">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-muted-foreground">
