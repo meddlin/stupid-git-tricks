@@ -1,6 +1,8 @@
 import { Roboto_Mono } from 'next/font/google'
 
-const RobotoMono = Roboto_Mono()
+const RobotoMono = Roboto_Mono({
+  subsets: ["latin"],
+})
 
 export default function Home() {
   return (
