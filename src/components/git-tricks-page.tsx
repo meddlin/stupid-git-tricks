@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { gitCommands } from "@/lib/data"
-import { SearchBar } from "./search-bar"
-import { CommandList } from "./command-list"
+import { SearchBar } from "@/components/search-bar"
+import { CommandList } from "@/components/command-list"
 
 export function GitTricksPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -14,7 +14,7 @@ export function GitTricksPage() {
       command.name.toLowerCase().includes(searchLower) ||
       command.description.toLowerCase().includes(searchLower) ||
       command.usage.toLowerCase().includes(searchLower) ||
-      command.tags.some((tag) => tag.toLowerCase().includes(searchLower))
+      command.tags.some((tag: any) => tag.toLowerCase().includes(searchLower))
     )
   })
 
