@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Label } from "@/components/ui/label";
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +27,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`flex flex-col h-screen bg-[#002734] ${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundImage:
+            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/builtt_personal_cover_without_logo-kkH3tDxwbYuPQef78SKUFE53nupNRF.png)",
+          backgroundSize: "auto",
+          backgroundRepeat: "repeat-y",
+          backgroundPosition: "top right",
+        }}
       >
+        <div className="flex flex-row">
+          <Label className="text-white">
+            <Link href="/tricks">Tricks</Link>
+          </Label>
+        </div>
         {children}
       </body>
     </html>
