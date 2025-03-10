@@ -26,7 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <body>
+        {children}
+      </body>
+
+      {/* <body
         className={`flex flex-col h-screen bg-[#002734] ${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
           backgroundImage:
@@ -42,7 +46,7 @@ export default function RootLayout({
           </Label>
         </div>
         {children}
-      </body>
+      </body> */}
     </html>
   );
 }

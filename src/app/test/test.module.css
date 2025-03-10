@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #002734
+}
+
+.overlayText {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 2px;
+}
+
+.box {
+    width: 16px;
+    height: 16px;
+    background-color: green;
+    border-radius: 2px;
+    /* filter: drop-shadow(2px 2px, dakgray); */
+}
+
+.lightgreenBox {
+    width: 16px;
+    height: 16px;
+    background-color: lightgreen;
+    border-radius: 2px;
+    /* filter: drop-shadow(2px 2px, dakgray); */
+}
+
+.darkBox {
+    width: 16px;
+    height: 16px;
+    background-color: darkgreen;
+    border-radius: 2px;
+    /* filter: drop-shadow(2px 2px, dakgray); */
+}
+.invisiBox {
+    width: 16px;
+    height: 16px;
+    background-color: #002734;
+    border-radius: 2px;
+    /* filter: drop-shadow(2px 2px, dakgray); */
+}
